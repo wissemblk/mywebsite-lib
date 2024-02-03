@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+    <meta charset="UTF -8">
+
+<head>
+        <title>page</title>
+        <link href="quicklib.css" rel="stylesheet" type="text/css">
+
+    </head>
+    <body>
+        
+        <div id="preloader"></div>
+        <h1>hello</h1>
+        <script type="text/javascript">
+            var loader;
+            function loadNow(opacity){
+                if(opacity<=0){
+                   displayConten();
+                }
+                else{
+                    loader.style.opacity = 0;
+                    window.setTimeout(function(){
+                        loadNow(opacity -0.05)
+                    },100)
+                }
+            
+        }
+        function displayContent(){
+            loader.style.display='none';
+            document.getElementById('content').style.display ='block'
+        }
+        document.addEventListener("DOMContentLoaded",function(){
+            loader = document.getElementById('preloader');
+            loadNow(1);
+        })
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper{
+    margin: 60;
+    width: 1000;
+}
+h1 {
+    position: relative;
+    font-size: 100%;
+    font-style: oblique;
+
+
+
+}
+
+#preloader{
+
+
+    background: #000 url(bookpreload.gif) no-repeat center center;
+    background-size: 50%;
+    height:100vh ;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
